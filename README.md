@@ -23,9 +23,11 @@ A lightweight and efficient driver for SSD1315 128x64 OLED displays using ESP32 
 
 2. Update your main `CMakeLists.txt` to include the component:
    ```cmake
-   idf_component_register(SRCS "main.c"
-                        INCLUDE_DIRS "."
-                        REQUIRES driver ssd1315)
+   idf_component_register(
+      SRCS "main.c"
+      INCLUDE_DIRS "."
+      REQUIRES driver ssd1315
+   )
    ```
 
 ### Method 2: Direct Inclusion
